@@ -1,0 +1,413 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FB9221CC2C6062C200F2C6A0 /* FormantBuilderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9221CB2C6062C200F2C6A0 /* FormantBuilderApp.swift */; };
+		FB9221CE2C6062C200F2C6A0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9221CD2C6062C200F2C6A0 /* ContentView.swift */; };
+		FB9221D02C6062C200F2C6A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB9221CF2C6062C200F2C6A0 /* Assets.xcassets */; };
+		FB9221D32C6062C200F2C6A0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB9221D22C6062C200F2C6A0 /* Preview Assets.xcassets */; };
+		FB9221DC2C6062F300F2C6A0 /* python-stdlib in Resources */ = {isa = PBXBuildFile; fileRef = FB9221DA2C6062F300F2C6A0 /* python-stdlib */; };
+		FB9221DD2C6062F300F2C6A0 /* Python.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB9221DB2C6062F300F2C6A0 /* Python.xcframework */; };
+		FB9221E02C60630200F2C6A0 /* PythonKit in Frameworks */ = {isa = PBXBuildFile; productRef = FB9221DF2C60630200F2C6A0 /* PythonKit */; };
+		FB9221E32C60631400F2C6A0 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB9221E22C60631400F2C6A0 /* SystemConfiguration.framework */; };
+		FB9221E72C6063D400F2C6A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9221E62C6063D400F2C6A0 /* AppDelegate.swift */; };
+		FB9221E92C60643B00F2C6A0 /* PythonHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9221E82C60643B00F2C6A0 /* PythonHandler.swift */; };
+		FBC7B09C2C60654200C53EDB /* GlobalAppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC7B09B2C60654200C53EDB /* GlobalAppState.swift */; };
+		FBF963612C65B58300D0A99D /* Scripts in Resources */ = {isa = PBXBuildFile; fileRef = FBF963602C65B58300D0A99D /* Scripts */; };
+		FBF963632C65CA9300D0A99D /* AudioHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF963622C65CA9300D0A99D /* AudioHandler.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		FB9221C82C6062C200F2C6A0 /* FormantBuilder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FormantBuilder.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB9221CB2C6062C200F2C6A0 /* FormantBuilderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormantBuilderApp.swift; sourceTree = "<group>"; };
+		FB9221CD2C6062C200F2C6A0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FB9221CF2C6062C200F2C6A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FB9221D22C6062C200F2C6A0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FB9221D42C6062C200F2C6A0 /* FormantBuilder.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FormantBuilder.entitlements; sourceTree = "<group>"; };
+		FB9221DA2C6062F300F2C6A0 /* python-stdlib */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "python-stdlib"; sourceTree = "<group>"; };
+		FB9221DB2C6062F300F2C6A0 /* Python.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = Python.xcframework; sourceTree = "<group>"; };
+		FB9221E22C60631400F2C6A0 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		FB9221E62C6063D400F2C6A0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FB9221E82C60643B00F2C6A0 /* PythonHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PythonHandler.swift; sourceTree = "<group>"; };
+		FBC7B09B2C60654200C53EDB /* GlobalAppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalAppState.swift; sourceTree = "<group>"; };
+		FBF963602C65B58300D0A99D /* Scripts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Scripts; sourceTree = "<group>"; };
+		FBF963622C65CA9300D0A99D /* AudioHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioHandler.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FB9221C52C6062C200F2C6A0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB9221DD2C6062F300F2C6A0 /* Python.xcframework in Frameworks */,
+				FB9221E32C60631400F2C6A0 /* SystemConfiguration.framework in Frameworks */,
+				FB9221E02C60630200F2C6A0 /* PythonKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FB9221BF2C6062C200F2C6A0 = {
+			isa = PBXGroup;
+			children = (
+				FBF963602C65B58300D0A99D /* Scripts */,
+				FB9221DA2C6062F300F2C6A0 /* python-stdlib */,
+				FB9221DB2C6062F300F2C6A0 /* Python.xcframework */,
+				FB9221CA2C6062C200F2C6A0 /* FormantBuilder */,
+				FB9221C92C6062C200F2C6A0 /* Products */,
+				FB9221E12C60631400F2C6A0 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FB9221C92C6062C200F2C6A0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FB9221C82C6062C200F2C6A0 /* FormantBuilder.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FB9221CA2C6062C200F2C6A0 /* FormantBuilder */ = {
+			isa = PBXGroup;
+			children = (
+				FB9221CB2C6062C200F2C6A0 /* FormantBuilderApp.swift */,
+				FB9221CD2C6062C200F2C6A0 /* ContentView.swift */,
+				FBF963622C65CA9300D0A99D /* AudioHandler.swift */,
+				FB9221CF2C6062C200F2C6A0 /* Assets.xcassets */,
+				FB9221D42C6062C200F2C6A0 /* FormantBuilder.entitlements */,
+				FB9221D12C6062C200F2C6A0 /* Preview Content */,
+				FB9221E62C6063D400F2C6A0 /* AppDelegate.swift */,
+				FB9221E82C60643B00F2C6A0 /* PythonHandler.swift */,
+				FBC7B09B2C60654200C53EDB /* GlobalAppState.swift */,
+			);
+			path = FormantBuilder;
+			sourceTree = "<group>";
+		};
+		FB9221D12C6062C200F2C6A0 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				FB9221D22C6062C200F2C6A0 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FB9221E12C60631400F2C6A0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FB9221E22C60631400F2C6A0 /* SystemConfiguration.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FB9221C72C6062C200F2C6A0 /* FormantBuilder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB9221D72C6062C200F2C6A0 /* Build configuration list for PBXNativeTarget "FormantBuilder" */;
+			buildPhases = (
+				FB9221C42C6062C200F2C6A0 /* Sources */,
+				FB9221C52C6062C200F2C6A0 /* Frameworks */,
+				FB9221C62C6062C200F2C6A0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FormantBuilder;
+			packageProductDependencies = (
+				FB9221DF2C60630200F2C6A0 /* PythonKit */,
+			);
+			productName = FormantBuilder;
+			productReference = FB9221C82C6062C200F2C6A0 /* FormantBuilder.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FB9221C02C6062C200F2C6A0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					FB9221C72C6062C200F2C6A0 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+				};
+			};
+			buildConfigurationList = FB9221C32C6062C200F2C6A0 /* Build configuration list for PBXProject "FormantBuilder" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FB9221BF2C6062C200F2C6A0;
+			packageReferences = (
+				FB9221DE2C60630200F2C6A0 /* XCRemoteSwiftPackageReference "PythonKit" */,
+			);
+			productRefGroup = FB9221C92C6062C200F2C6A0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FB9221C72C6062C200F2C6A0 /* FormantBuilder */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FB9221C62C6062C200F2C6A0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB9221D32C6062C200F2C6A0 /* Preview Assets.xcassets in Resources */,
+				FB9221D02C6062C200F2C6A0 /* Assets.xcassets in Resources */,
+				FB9221DC2C6062F300F2C6A0 /* python-stdlib in Resources */,
+				FBF963612C65B58300D0A99D /* Scripts in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FB9221C42C6062C200F2C6A0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB9221E72C6063D400F2C6A0 /* AppDelegate.swift in Sources */,
+				FBF963632C65CA9300D0A99D /* AudioHandler.swift in Sources */,
+				FB9221CE2C6062C200F2C6A0 /* ContentView.swift in Sources */,
+				FB9221E92C60643B00F2C6A0 /* PythonHandler.swift in Sources */,
+				FBC7B09C2C60654200C53EDB /* GlobalAppState.swift in Sources */,
+				FB9221CC2C6062C200F2C6A0 /* FormantBuilderApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		FB9221D52C6062C200F2C6A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FB9221D62C6062C200F2C6A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		FB9221D82C6062C200F2C6A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = FormantBuilder/FormantBuilder.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"FormantBuilder/Preview Content\"";
+				DEVELOPMENT_TEAM = 6PPLU9GFJ6;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ookamitai.FormantBuilder;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		FB9221D92C6062C200F2C6A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = FormantBuilder/FormantBuilder.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"FormantBuilder/Preview Content\"";
+				DEVELOPMENT_TEAM = 6PPLU9GFJ6;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ookamitai.FormantBuilder;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FB9221C32C6062C200F2C6A0 /* Build configuration list for PBXProject "FormantBuilder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB9221D52C6062C200F2C6A0 /* Debug */,
+				FB9221D62C6062C200F2C6A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FB9221D72C6062C200F2C6A0 /* Build configuration list for PBXNativeTarget "FormantBuilder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB9221D82C6062C200F2C6A0 /* Debug */,
+				FB9221D92C6062C200F2C6A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FB9221DE2C60630200F2C6A0 /* XCRemoteSwiftPackageReference "PythonKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pvieito/PythonKit.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FB9221DF2C60630200F2C6A0 /* PythonKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FB9221DE2C60630200F2C6A0 /* XCRemoteSwiftPackageReference "PythonKit" */;
+			productName = PythonKit;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = FB9221C02C6062C200F2C6A0 /* Project object */;
+}
